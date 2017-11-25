@@ -1,0 +1,697 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=cyrillic')
+body
+	font-size: 16px
+	font-family: 'Ubuntu', sans-serif
+a
+	&:hover
+		text-decoration: none
+		color: inherit
+li
+	list-style: none
+.max-wrapper
+	max-width: 2300px
+.icon-call-phone
+	color: #fae12e
+	position: relative
+	.fa
+		&:before
+			top: -5px
+			left: -33px
+			position: absolute
+//==========================//
+//				#COLOR
+//==========================//	
+$color-super: #ed143d
+$color-second: #d9d9d9
+$color-block-header: #f8f8f8
+$color-section-bg: #f6f6f6
+
+.link-color
+	color: rgba(255, 255, 255, 0.8)
+//==========================//
+//				#GLOBAL
+//==========================//
+.section-title
+	text-shadow: 0 1px 2px rgba(0,0,0,.25)
+.head-text
+	font-size: 2.1rem
+.text-head-sub
+	font-size: 1.75rem
+.inline-block
+	display: inline-block
+.wrapper-color
+	background-color: $color-section-bg
+.text-block
+	line-height: 1.4
+//==========================//
+//	-> #POP-UP
+//==========================//
+.wrapper-popup
+	width: 100%
+	height: 100%
+	top: 0
+	position: fixed
+	display: none
+	background-color: rgba(0, 0, 0, 0.6)
+	z-index: 20
+	.wrapper-popup-content
+		top: 50%
+		position: relative
+		transform: translateY(-50%)
+		display: none
+		.wrapper-content
+			border-radius: 5px
+			background-color: #fff
+			position: relative
+			.block-menu
+				.close-button
+					top: 0
+					right: 0
+					position: absolute
+//==========================//
+//	-> #OWL SLIDER
+//==========================//
+.owl-dots
+	.owl-dot
+		display: inline-block
+		float: left
+		cursor: pointer
+		&:hover
+			background-color: $color-second
+		&.active
+			color: #fff
+			background-color: #3b3b3b
+	&:after
+		content: ''
+		display: block
+		clear: both
+//==========================//
+//	-> #BUTTON
+//==========================//
+.button-base
+	cursor: pointer
+.button-individual
+	width: 100%
+	padding: 13px 40px
+	border-radius: 5px
+	border: none
+	cursor: pointer
+	color: #fff
+	background-color: $color-super
+	&:hover
+		color: #fff
+		background-color: rgba(240, 73, 3, 0.8)
+.button-transparent
+	width: 100%
+	padding: 13px 40px
+	border: none
+	cursor: pointer
+	background-color: transparent
+//==========================//
+//	-> #ADVANTAGES
+//==========================//
+.block-advantages
+	.content-advantages
+		border-right: solid 1px $color-second
+		word-wrap: break-word
+		&:last-child
+			border: none
+		.text-head-sub
+		.text-block
+//==========================//
+//	-> #ORDER INFO
+//==========================//
+.order-head
+	.icon
+		margin-right: 20px
+	.text-head-sub
+		padding: 8px 0
+//==========================//
+//	-> #COPYWRITING
+//==========================//
+.block-copywriting
+//==========================//
+//	-> #FORM'S
+//==========================//
+.block-form
+	input, label, textarea
+		padding: 5px 0
+		cursor: pointer
+		border-radius: 5px
+		color: $color-second
+	::-webkit-input-placeholder
+		color: inherit
+	.form-input
+		input, label, textarea
+			width: 100%
+			margin-top: 20px
+			border: none
+			&:first-child
+				margin-top: 0
+		label
+			margin-bottom: 5px
+		input
+			padding: 10px
+	.form-input-transparent
+		width: 100%
+		margin-top: 20px
+		border-radius: 0
+		background-color: transparent
+	.head-sub-input
+		font-size: 1.6rem
+//==========================//
+//	-> #MENU
+//==========================//
+.menu
+	color: rgba(255, 255, 255, 0.8)
+	.item-link
+		padding: 5px 10px
+		display: inline-block
+		color: inherit
+	.inline-link
+		float: left
+	&:after
+		content: ''
+		display: block
+		clear: both
+//==========================//
+//	-> #BORDER
+//==========================//
+.border-top
+	border-top: solid 1px #555
+.border-bottom
+	border-bottom: solid 1px #555
+//==========================//
+//	-> #ICON'S
+//==========================//
+.wrapper-inline-icon
+	position: relative
+	.inline-icon
+		position: relative
+	.inline-icon-text
+		top: 50%
+		margin: 0 0 0 15px !important
+		display: inline-table
+		transform: translateY(-50%)
+.icon-quality
+	&:before
+		content: ''
+		padding: 35px
+		display: inline-block
+		background: url('https://qlean.ru/qassets/ab7690df55f62f3b87e47cd00b674a37.svg') no-repeat center
+		background-size: contain
+.icon-tag-price
+	&:before
+		content: ''
+		padding: 35px
+		display: inline-block
+		background: url('https://qlean.ru/qassets/4bc1d46ff8c4e797c6532d5e2ac186ac.svg') no-repeat center
+		background-size: contain
+.icon-card
+	&:before
+		content: ''
+		padding: 35px
+		display: inline-block
+		background: url('https://qlean.ru/qassets/56f2e11079f37b629c6f591107c35bb4.svg') no-repeat center
+		background-size: contain
+.icon-calendar
+	&:before
+		content: ''
+		padding: 35px
+		display: inline-block
+		background: url('https://qlean.ru/qassets/b3c335d9ff19aabc8c6bfc588173590b.svg') no-repeat center
+		background-size: contain
+.icon-room-1
+	position: relative
+	display: inline-block
+	padding: 25px
+	border-radius: 3px
+	background-color: rgba(0,0,0,.2)
+	transition-property: background-color
+	transition-duration: inherit
+.icon-room-2
+	&:before
+		content: ''
+		width: 50%
+		height: 100%
+		top: 0
+		position: absolute
+		display: inline-block
+		border-radius: 0 3px 3px 0
+		background-color: rgba(0,0,0,.2)
+		transition-property: background-color
+		transition-duration: inherit
+.icon-room-3
+	&:after
+		content: ''
+		width: 50%
+		height: 50%
+		bottom: 0
+		right: 0
+		position: absolute
+		display: inline-block
+		border-radius: 0 3px 3px 0
+		background-color: rgba(0,0,0,.2)
+		transition-property: background-color
+//==========================//
+//				#HEADER
+//==========================//
+.wrapper-header
+	height: -webkit-fill-available
+	background: url('https://qlean.ru/qassets/11cac0b59014e3722bd086a0d82656ca.jpg') no-repeat center
+	background-size: cover
+	background-position: top
+	position: relative
+	.first-screen
+		margin-top: 100px
+		color: #fff
+		.section-nav
+			position: absolute
+			left: 50%
+			bottom: 65px
+			transform: translateX(-50%)
+.wrapper-header-menu
+	padding: 0
+	&:before
+		content: ''
+	.block-header-menu
+		padding: 15px
+	.header-logo
+		float: left
+		img
+			max-width: 100px
+	.block-mobile-action
+		display: none
+	nav
+		float: right
+		font-size: 0.9rem
+		li
+			padding: 10px 20px
+			float: left
+		a
+			color: #fff
+			&.icon-call-phone
+				color: #fae12e
+	#action-header-menu
+		width: 100%
+		padding: 10px 15px
+		top: 0
+		position: fixed
+		display: none
+		color: #333
+		background-color: #fff
+		box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 6px 0px
+		-webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 6px 0px
+		z-index: 10
+		a
+			color: #333
+		.button-individual
+			color: #fff
+//==========================//
+//				#ADVANTAGES
+//==========================//
+#wrapper-advantages
+	padding: 70px 0
+	background-color: $color-block-header
+	.block-advantages
+		margin-top: 50px
+		.content-advantages
+			padding: 15px
+			.text-head-sub
+				margin-top: 15px
+				font-size: 1.1rem
+				line-height: 1.2
+			.text-block
+				margin-top: 17px
+				font-size: 1.125rem
+				line-height: 1.4
+//==========================//
+//				#PRICE
+//==========================//
+#wrapper-price
+	padding: 70px 0
+	.block-order
+		margin-top: 50px
+		.content-order
+			margin-bottom: 50px
+			padding: 20px
+			border-radius: 7px
+			border: solid 1px $color-second
+			.order-head
+				.icon
+					margin-right: 10px
+			.order-main
+				margin-top: 50px
+				.text-head-sub
+					font-size: 2.2rem
+				.icon
+					margin-right: 15px
+				.icon-tag-price
+					&:before
+						padding: 30px
+			.button-wrapper
+				margin-top: 15px
+			.button-individual
+				padding: 20px
+		.text-head-sub
+			font-size: 1.6rem
+			margin-top: 5px
+//==========================//
+//				#EXPERT'S
+//==========================//
+#wrapper-expert
+	padding: 70px 0
+	.content-advantages
+		margin-bottom: 25px
+	.block-title
+		.head-text-sub
+			margin-top: 30px
+			font-size: 1.1rem
+			line-height: 1.3
+	.block-expert
+		margin-top: 50px
+		.block-advantages
+			.content-advantages
+				.text-head-sub
+					margin-top: 20px
+				.text-block
+					margin-top: 20px
+.content-expert
+	margin-bottom: 50px
+	padding-bottom: 25px
+	background-color: #fff
+	border: solid 1px $color-second
+	border-radius: 7px
+	overflow: hidden
+	background-color: #f6f6f6
+	.block-header
+		padding: 15px
+		background-color: $color-block-header
+		z-index: 1
+		.text-head-sub
+			font-size: 1.3rem
+			font-weight: bold
+	.block-main
+		margin-top: 25px
+		.round-img
+			width: 200px
+			max-height: 200px
+			margin: 0 auto
+			overflow: hidden
+			img
+				width: 100%
+				height: 290px
+				top: -13px
+				position: relative
+				object-fit: cover
+	.block-text
+		margin-top: 25px
+		padding: 0 20px
+		line-height: 1.3
+//==========================//
+//				#OUR WORK SLIDER
+//==========================//
+#wrapper-our-work-slider
+	padding: 70px 0
+	.slider-our-work
+		font-size: 1.4rem
+	.owl-dots
+		.owl-dot
+			width: 25%
+			padding: 13px
+			text-align: center
+			border: solid 2px #3b3b3b
+			&:first-child
+				border-right: none
+				border-radius: 5px 0 0 5px
+			&:last-child
+				border-left: none
+				border-radius: 0 5px 5px 0
+			&:nth-of-type(2)
+				border-right: none
+	.block-accent-a
+		height: 100%
+		width: 40%
+		top: 0
+		position: absolute
+		z-index: 2
+		color: #fff
+		background: rgba(51, 51, 51, 0.94)
+		padding: 30px
+		border-radius: 0 5px 5px 0
+		.block-title
+			margin-top: 15%
+			.head-text
+				font-size: 2.8rem
+		.block-main
+			margin-top: 50px
+			.block-head-sub
+				font-size: 1.8rem
+			.block-main-sub
+				margin-top: 20px
+				font-size: 1.2rem
+				line-height: 1.4
+	.wrapper-content
+		margin-top: 30px
+		position: relative
+		overflow: hidden
+		border-radius: 10px
+	.owl-dots
+		margin-top: 70px
+//==========================//
+//				#FEEDBACK
+//==========================//
+#wrapper-feedback
+	min-height: 300px
+	padding: 70px 0
+	background: url('https://qlean.ru/qassets/03c59eef3ba43057e335019b3b718e2c.jpg') no-repeat center
+	background-size: cover
+	position: relative
+	&:before
+		content: ''
+		width: 100%
+		height: 100%
+		top: 0
+		position: absolute
+		background-color: rgba(0, 0, 0, 0.75)
+	.wrapper-super-info
+		.block-title
+			color: #f0f0f0
+		.block-feedback
+			margin-top: 70px
+			.left-content
+				margin: 0 0 70px
+				color: #f0f0f0
+				.text-head-sub
+					font-size: 2.5rem
+				.block-text
+					margin-top: 20px
+					font-size: 1.2rem
+					line-height: 1.4
+	.block-form
+		background: #f6f6f6
+		border-radius: 7px
+		overflow: hidden
+		.block-header
+			padding: 20px 0 15px
+			background-color: $color-block-header
+		.block-main
+			padding: 0 50px 40px
+			background-color: $color-section-bg
+		.text-head-sub
+			font-size: 2.2rem
+			font-weight: bold
+		.form-input
+			margin-top: 20px
+		label
+			font-size: 1.3rem
+		input
+			padding: 15px
+			font-size: 1.05rem
+		form
+			margin-top: 20px
+		.form-button
+			margin-top: 45px
+			padding: 0 40px
+//==========================//
+//				#COMMENT
+//==========================//
+#wrapper-comment
+	padding: 70px 0
+	.block-slider
+		margin-top: 50px
+		.content-advantages
+			.block-head
+				.rounded-circle
+					max-width: 110px
+					max-height: 110px
+					margin: 0 auto
+					overflow: hidden
+			.block-main
+				margin-top: 20px
+				.block-head
+					font-size: 1.125rem
+				.text-head-sub
+					font-size: .9rem
+				.text-block
+					padding: 20px 30px
+					font-size: .9rem
+					line-height: 1.2
+		.content-advantages
+			border-right: solid 1px #d9d9d9
+			&:last-child
+				border: none
+#popup-feedback
+	.wrapper-content
+		padding: 20px
+		background-color: $color-section-bg
+		.block-menu
+			.close-button
+				top: 10px
+				right: 10px
+		.left-content
+			height: 100%
+			padding: 5px 20px
+			position: relative
+			.block-head
+				.head-text
+					font-size: 1.8rem
+				.text-block
+					margin-top: 20px
+					font-size: .9rem
+					line-height: 1.2
+		.right-content
+			padding: 0 20px
+			.block-form
+				.block-header
+					padding: 0 0 20px
+				.block-main
+					margin-top: 20px
+					.form-button
+						margin-top: 30px
+//==========================//
+//				#FOOTER
+//==========================//
+footer
+	padding: 20px 0 0
+	background-color: #383838
+	color: rgba(255, 255, 255, 0.8)
+	.block-content
+		margin-bottom: 20px
+	.block-header
+		.text-head-sub
+			font-size: 1.5rem
+	.block-main
+		margin-top: 20px
+		font-size: 14px
+		.block-of-element
+			padding: 3px 0
+			&:last-child
+	.menu
+		li
+			padding: 5px 0
+	.block-mailform
+		.block-form
+			border-width: 3px
+			button
+				height: 100%
+				padding: 0 5px
+				color: $color-second
+			.form-input
+				padding: 10px
+				font-size: 1.5rem
+				input
+					padding: 0
+	.block-social
+		.item-link
+			padding: 0 10px
+			&:first-child
+				padding-left: 0
+			&:last-child
+				padding-right: 0
+	.wrapper-copywriting
+		.block-copywriting
+			font-size: .7rem
+			.content-copywriting
+				padding: 10px 0
+				color: rgba(255, 255, 255, 0.8)
+				.inline-block
+					padding: 5px 10px
+//==========================//
+//				#MEDIA
+//==========================//
+@media screen and (max-width: 992px)
+	.wrapper-header-menu
+		&:after
+			content: ''
+			clear: both
+			display: block
+		.block-header-menu
+			padding: 0
+			background-color: #fff
+		.header-logo
+			width: 100%
+			padding: 15px
+			border-bottom: solid 1px $color-second
+			.block-mobile-action
+				float: right
+				display: block
+			&:after
+				content: ''
+				clear: both
+				display: block
+		nav
+			width: 100%
+			float: unset
+			text-align: center
+			display: none
+			&:after
+				content: ''
+				clear: both
+				display: block
+			li
+				width: 100%
+				padding: 0
+				background-color: #fff
+				a
+					width: 100%
+					padding: 20px
+					display: inline-block
+					color: #333
+					border-bottom: solid 1px $color-second
+					&:hover
+						background-color: rgba(217, 217, 217, 0.80)
+						color: #fff
+				&:last-child a
+					border: none
+		#action-header-menu
+			padding: 0
+	//==========================//
+	//				#OUR WORK SLIDER
+	//==========================//
+	#wrapper-our-work-slider
+		.slider-our-work
+			margin-top: 30px
+		.wrapper-content
+			.block-accent-a
+				padding: 20px
+				.block-title
+					.head-text
+						font-size: 1.2rem
+				.block-main
+					margin-top: 20px
+				.block-head-sub
+					font-size: 1rem
+				.block-main-sub
+					margin-top: 10px
+					font-size: .8rem
+@media screen and (max-width: 576px)
+	//==========================//
+	//				#OUR WORK SLIDER
+	//==========================//
+	#wrapper-our-work-slider
+		.block-accent-a
+			.block-title
+				margin-top: 5%
+				.head-text
+					font-size: 1rem
